@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/eav-schema.xsd">
+	<!--  model EAV -->
+	<EntityTable name="eav_entity_type" identifier="entity_type_code" id="entity_type_id" />
+	<AttributeTable name="eav_attribute" idEntity="entity_type_id" id="attribute_id" identifier="attribute_code" type="backend_type" />
+	
+	<!-- In definition you can use the field %type% and %identifier% of attribute -->
+	<ValueTable>
+		<customValueTable type="default" name="catalog_product_entity_text" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />
+		<customValueTable type="datetime" name="catalog_product_entity_datetime" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />
+		<customValueTable type="decimal" name="catalog_product_entity_decimal" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />
+		<customValueTable type="gallery" name="catalog_product_entity_gallery" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />
+		<customValueTable type="group_price" name="catalog_product_entity_group_price" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />
+		<customValueTable type="media_gallery" name="catalog_product_entity_media_gallery" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />
+		<customValueTable type="media_gallery_value" name="catalog_product_entity_media_gallery_value" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />
+		<customValueTable type="tier_price" name="catalog_product_entity_tier_price" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />
+		<customValueTable type="varchar" name="catalog_product_entity_varchar" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />
+		<customValueTable type="int" name="catalog_product_int" id="attribute_id" identifier="value_id" value="value" idContent="entity_id" />	
+	</ValueTable>
+	
+	<!-- Content Table -->
+	<ContentTable name="catalog_product_entity" idEntity="entity_type_id" id="entity_id" identifier="sku" />
+	
+	<!-- Type Attributes Table -->
+	<TypeAttributes>
+		<type name="default" />
+		<type name="mgdate" />
+		<type name="mgdatetime" />
+		<type name="mginteger" />
+		<type name="mgfloat" />
+		<type name="mgtime" />
+		<type name="mgsrrating" />
+		<type name="mgcomcomments"/>
+	</TypeAttributes>
+</Configuration>

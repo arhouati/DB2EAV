@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Todo: schema ddt -->
+
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/eav-schema.xsd">
+	<!--  model EAV -->
+	<EntityTable name="" id="" identifier="" other=""/>
+	<AttributeTable name="" id="" identifier="" type="" idEntity="" />
+	
+	<!-- In definition you can use the field %type% and %identifier% of attribute -->
+	<ValueTable>
+		<customValueTable type="default" name="" id="" identifier="" value="" idContent="" />
+	</ValueTable>
+	
+	<!-- Content Table -->
+	<ContentTable name="" id="" identifier="" idEntity=""  />
+	<TypeAttributes>
+		<type name="" />
+	</TypeAttributes>
+</Configuration>

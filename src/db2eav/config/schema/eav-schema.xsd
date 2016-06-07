@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Configuration">
+	  <xs:complexType>
+	    <xs:sequence>
+	    
+	      <xs:element name="EntityTable">
+	      	 <xs:complexType>
+	            <xs:attribute name="name" type="xs:string" use="required"/>
+	      		<xs:attribute name="id" type="xs:string" use="required"/>
+	      		<xs:attribute name="identifier" type="xs:string" use="required"/>
+	      		<xs:attribute name="other" type="xs:string"/>
+	        </xs:complexType>
+	      </xs:element>
+	      
+	      <xs:element name="AttributeTable">
+	      	<xs:complexType>
+	      		<xs:attribute name="name" type="xs:string" use="required"/>
+	      		<xs:attribute name="id" type="xs:string" use="required"/>
+	      		<xs:attribute name="identifier" type="xs:string" use="required"/>
+	      		<xs:attribute name="type" type="xs:string" use="required"/>
+	      		<xs:attribute name="idEntity" type="xs:string" use="required"/>
+	        </xs:complexType>
+	      </xs:element>
+	      
+	      <xs:element name="ValueTable">
+	      	<xs:complexType>
+	          <xs:sequence maxOccurs="unbounded">
+	            <xs:element name="customValueTable">
+	            	<xs:complexType>
+	            		<xs:attribute name="type" type="xs:string" use="required"/>
+	            		<xs:attribute name="name" type="xs:string" use="required"/>
+	      				<xs:attribute name="id" type="xs:string" use="required"/>
+	      				<xs:attribute name="identifier" type="xs:string" use="required"/>
+	      				<xs:attribute name="value" type="xs:string" use="required"/>
+	      				<xs:attribute name="idContent" type="xs:string" use="required"/>
+	            	</xs:complexType>
+	            </xs:element>
+	          </xs:sequence>
+	        </xs:complexType>
+	      </xs:element>
+	      
+	      <xs:element name="ContentTable">
+	      	<xs:complexType>
+	          	<xs:attribute name="name" type="xs:string" use="required"/>
+	      		<xs:attribute name="id" type="xs:string" use="required"/>
+	      		<xs:attribute name="identifier" type="xs:string" use="required"/>
+	      		<xs:attribute name="idEntity" type="xs:string" use="required"/>
+	        </xs:complexType>
+	      </xs:element>
+	      
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+
+	<xs:element name="TypeAttributes">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="type">
+					<xs:complexType>
+						<xs:attribute name="name" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+	        </xs:sequence>
+	    </xs:complexType>
+	</xs:element>
+	
+	</xs:sequence>
+	        </xs:complexType>
+	      </xs:element>
+</xs:schema> 

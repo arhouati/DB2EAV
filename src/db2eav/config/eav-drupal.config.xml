@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/eav-schema.xsd">
+	<!--  model EAV -->
+	<EntityTable name="node_type" id="type" identifier="name" />
+	<AttributeTable name="field_config_instance" id="bundle" identifier="field_name" type="field_name" idEntity="bundle" />
+	
+	<!-- In definition you can use the field %type% and %identifier% of attribute -->
+	<ValueTable>
+		<customValueTable type="default" name="field_data_%type%" id="bundle" identifier="bundle" value="%type%_value" idContent="entity_id" />
+	</ValueTable>
+	
+	<!-- Content Table -->
+	<ContentTable name="node" id="nid" identifier="title" idEntity="type"  />
+	<!-- Type Attributes Table -->
+	<TypeAttributes>
+		<type name="default" />
+		<type name="drdate" />
+		<type name="drdatetime" />
+		<type name="drinteger" />
+		<type name="drfloat" />
+		<type name="drtime" />
+		<type name="drsrrating" />
+		<type name="drcomcomments"/>
+	</TypeAttributes>
+</Configuration>

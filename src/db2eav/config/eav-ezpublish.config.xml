@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema/eav-schema.xsd">
+	<!--  model EAV -->
+	<EntityTable name="ezcontentclass" id="id" identifier="identifier" other="version,remote_id"/>
+	<AttributeTable name="ezcontentclass_attribute" id="id" identifier="identifier" type="data_type_string" idEntity="contentclass_id" />
+	
+	<!-- In definition you can use the field %type% and %identifier% of attribute -->
+	<ValueTable>
+		<customValueTable type="default"  name="ezcontentobject_attribute" id="contentclassattribute_id" identifier="id" value="data_text" idContent="contentobject_id" />
+		<customValueTable type="ezdate" name="ezcontentobject_attribute" id="contentclassattribute_id" identifier="id" value="data_int" idContent="contentobject_id" />
+		<customValueTable type="ezdatetime"  name="ezcontentobject_attribute" id="contentclassattribute_id" identifier="id" value="data_int" idContent="contentobject_id" />
+		<customValueTable type="ezinteger"  name="ezcontentobject_attribute" id="contentclassattribute_id" identifier="id" value="data_int" idContent="contentobject_id" />
+		<customValueTable type="ezfloat"  name="ezcontentobject_attribute" id="contentclassattribute_id" identifier="id" value="data_float" idContent="contentobject_id" />
+		<customValueTable type="eztime"  name="ezcontentobject_attribute" id="contentclassattribute_id" identifier="id" value="data_int" idContent="contentobject_id" />
+		<customValueTable type="ezsrrating"  name="ezcontentobject_attribute" id="contentclassattribute_id" identifier="id" value="data_int" idContent="contentobject_id" />
+		<customValueTable type="ezcomcomments"  name="ezcontentobject_attribute" id="contentclassattribute_id" identifier="id" value="data_int" idContent="contentobject_id" />
+	</ValueTable>
+	
+	<!-- Content Table -->
+	<ContentTable name="ezcontentobject" id="id" identifier="name" idEntity="contentclass_id"  />
+	
+	<!-- Type Attributes Table-->
+	<TypeAttributes>
+		<type name="default"  />
+		<type name="ezdate"  />
+		<type name="ezdatetime"/>
+		<type name="ezinteger" />
+		<type name="ezfloat" />
+		<type name="eztime" />
+		<type name="ezsrrating" />
+		<type name="ezcomcomments"/>
+		<type name="ezstring" />
+		<type name="eztext"/>
+		<type name="ezuser" />
+		<type name="ezkeyword"/>
+		<type name="ezpage"/>
+		<type name="ezboolean"/>
+		<type name="ezxmltext"/>
+		<type name="ezinisetting"/>
+		<type name="ezimage"/>
+		<type name="ezpackage"/>
+		<type name="ezurl"/>
+		<type name="ezprice"/>
+		<type name="ezmultioption"/>
+		<type name="ezbinaryfile"/>
+		<type name="ezselection"/>
+	</TypeAttributes>
+</Configuration>

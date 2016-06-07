@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+	
+	<DefaultHost>
+		<!--
+			class that implements the connexion with database.
+			Two choice :
+				- Mysql
+				- Postgresql
+		 -->
+		<DataBaseHandle value="Mysql" />
+
+		<!--
+			this is the target CMS, ensure that the corresponding configuration file exists,
+			the name pattern is: eav-[name cms].xml
+		 -->
+
+		<DataBaseHost value="localhost" />
+		<DataBasePort value="3306" />
+		<DataBaseName value="drupal" />
+		<DataBaseLogin value="root" />
+		<DataBasePassWord value="root" />
+
+		<!--
+			this is the target CMS, ensure that the corresponding configuration file exists,
+			the name pattern is: eav-[name cms].xml
+		 -->
+		<DataBaseCMS value="drupal" />
+	</DefaultHost>
+
+	<magento>
+		<!--
+			class that implements the connexion with database.
+			Two choice :
+				- Mysql
+				- Postgresql
+		 -->
+		<DataBaseHandle value="Mysql" />
+
+		<!--
+			this is the target CMS, ensure that the corresponding configuration file exists,
+			the name pattern is: eav-[name cms].xml
+		 -->
+
+		<DataBaseHost value="localhost" />
+		<DataBasePort value="3306" />
+		<DataBaseName value="magento" />
+		<DataBaseLogin value="root" />
+		<DataBasePassWord value="root" />
+
+		<!--
+			this is the target CMS, ensure that the corresponding configuration file exists,
+			the name pattern is: eav-[name cms].xml
+		 -->
+		<DataBaseCMS value="magento" />
+	</magento>
+	
+	<drupal>
+		<!--
+			class that implements the connexion with database.
+			Two choice :
+				- Mysql
+				- Postgresql
+		 -->
+		<DataBaseHandle value="Mysql" />
+
+		<!--
+			this is the target CMS, ensure that the corresponding configuration file exists,
+			the name pattern is: eav-[name cms].xml
+		 -->
+
+		<DataBaseHost value="localhost" />
+		<DataBasePort value="3306" />
+		<DataBaseName value="drupal" />
+		<DataBaseLogin value="root" />
+		<DataBasePassWord value="root" />
+
+		<!--
+			this is the target CMS, ensure that the corresponding configuration file exists,
+			the name pattern is: eav-[name cms].xml
+		 -->
+		<DataBaseCMS value="drupal" />
+	</drupal>
+	
+</Configuration>
