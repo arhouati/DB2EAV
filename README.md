@@ -19,6 +19,14 @@ a CMS implements the three components of the EAV model.
 4 - Recovering content from CMS : using API we can retrieve data from remote CMS's database. The data is retrieved
 width SQL queries in associative arrays.
 
+# Current version
+beta 1.0
+Take a look to Demo to have more detail of how using the API
 
 # RoadMap
-version beta 1.0 will be available soon
+Next version will be beta 1.1,
+The roadMap can be defined in the next features:
+1/ Fixe Bugs on write mode
+2/ Use Doctrine as ORM for database
+3/ Add a new config template of Wordpres CMS
+
