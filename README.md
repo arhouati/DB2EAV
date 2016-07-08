@@ -22,6 +22,7 @@ width SQL queries in associative arrays.
 # Current version
 beta 1.0
 Take a look to Demo to have more detail of how using the API
+The class diagram is exposed on the file "DB2EAV-ClassDiagram.png"
 
 # RoadMap
 Next version will be beta 1.1,
@@ -29,4 +30,6 @@ The roadMap can be defined in the next features:
 1/ Fixe Bugs on write mode
 2/ Use Doctrine as ORM for database
 3/ Add a new config template of Wordpres CMS
+
+
 
